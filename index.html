@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{background: url(2.jpg);}
+		.container{
+			width: 965px;
+			background: pink;
+			margin:auto;
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		header{
+			width: 100%;
+		}
+
+		.navegacion{
+			width: 1000px;
+			margin: 30px auto;
+			background: red;
+		}
+
+		.navegacion ul{
+			list-style: none;
+		}
+
+		.menu > li{
+			position: relative;
+			display: inline-block;
+		}
+
+		.menu > li > a{
+			display: block;
+			padding: 15px 20px;
+			color: white;
+			font-family: 'Open sans';
+			text-decoration: none;
+		}
+
+		.menu li a:hover{
+			color: blue;
+			transition: all .3s;
+		}
+
+		/* Submenu*/
+
+		.submenu{
+			position: absolute;
+			background: #333333;
+			width: 120%;
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 1.5s;
+		}
+
+		.submenu li a{
+			display: block;
+			padding: 15px;
+			color: #fff;
+			font-family: 'Open sans';
+			text-decoration: none;
+		}
+
+		.menu li:hover .submenu{
+			visibility: visible;
+			opacity: 1;
+		}
+		nav{
+			background: orange;
+		}
+		.col{
+			width: 265px;
+			display: inline-block;
+			vertical-align: top;
+			text-align: justify;
+			padding: 20px;
+		}
+		.row{text-align: center;}
+		.col h2{color: blue;}}
+		footer{
+			overflow: hidden
+		}
+		footer{
+			color: black;
+			text-decoration: none;
+			text-align:center;
+			background: yellow;
+			height: 60px;
+			padding-top: 35px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+		<nav>
+			<img src="logoo.png" alt="" height="150" width="965">
+			<ul class="menu">
+				<li><a href="inicio.html">INICIO</a></li>
+				<li><a href="#">PRODUCTOS</a>
+					<ul class="submenu">
+						<li><a href="carne.html">CARNE</a></li>
+						<li><a href="verdura.html">VERDURAS</a></li>
+					</ul>
+				</li>
+				<li><a href="#">CONTACTOS</a>
+					<ul class="submenu">
+						<li><a href="mailto:ronalbalboacondori@gmail.com">GMAIL</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+		<img src="2.jpg" width="965" height="400" alt="">
+		<div class="row">
+			<div class="col">
+				<h2 align="center">CARNES FRIAS</h2>
+				<img src="c.jpg" width="250" height="250" alt="">
+				<p>Para el buen gusto de los bocaditos y sandwich, bien frescos y a pedido del cliente.</p>
+			</div>
+			<div class="col">
+				<h2 align="center">LECHUGA</h2>
+				<img src="v.jpg" width="250" height="250" alt="">
+				<p>Verduras para el acompañamiento de una buena salsa, es un vegetal que degustaras como una entrata en tu comida, son frecas y bien conservadas.</p>
+			</div>
+			<div class="col">
+				<h2 align="center">FILETES DE RES</h2>
+				<img src="c1.jpg" width="250" height="250" alt="">
+				<p>Carne pura pulpa y de corte medido a gusto del cliente manejados higienicamente, tienen el sabor de degustar en su comida con una buena preparacion.</p>
+			</div>
+		</div>
+		<footer>
+			<strong>&copy 2020 CARNICERIA RONAL</strong>
+		</footer>
+	</div>
+	
+</body>
+</html>
